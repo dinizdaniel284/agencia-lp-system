@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Agencia IA Diniz - SaaS Lead Capture System
 
-## Getting Started
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lucis/lucis/master/logos/nextjs.png" width="100" alt="Next.js" />
+  <img src="https://supabase.com/common/assets/images/design-resources/supabase-logo-icon.png" width="100" alt="Supabase" />
+</p>
 
-First, run the development server:
+---
 
-```bash
+## 🇧🇷 Português (Portuguese)
+
+### 📋 Sobre o Projeto
+Este é o motor de vendas oficial da **Agencia IA Diniz**. Um sistema de captura de leads de alta performance, desenvolvido para maximizar a conversão e garantir que nenhum contato seja perdido. 
+
+Diferente de landing pages comuns, este sistema sincroniza os dados em tempo real com um banco de dados na nuvem antes mesmo do redirecionamento para o WhatsApp.
+
+### ✨ Funcionalidades
+- ⚡ **Performance Extrema:** Construído com Next.js 15/16 e Turbopack.
+- 🎨 **Design High-End:** Interface moderna com Glassmorphism e Dark Mode.
+- ☁️ **Cloud Database:** Integração real-time com Supabase (PostgreSQL).
+- 📱 **Responsivo:** Totalmente otimizado para dispositivos móveis.
+- 🔐 **Segurança:** Variáveis de ambiente protegidas e validação de dados.
+
+### 🛠️ Stack Tecnológica
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Banco de Dados:** [Supabase](https://supabase.com/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+- **Ícones:** [Lucide React](https://lucide.dev/)
+- **Deploy:** [Vercel](https://vercel.com/)
+
+---
+
+## 🇺🇸 Inglês (English)
+
+### 📋 About the Project
+This is the official sales engine of **Agencia IA Diniz**. A high-performance lead capture system, designed to maximize conversion and ensure no contact is lost.
+
+Unlike common landing pages, this system synchronizes data in real-time with a cloud database even before redirecting to WhatsApp.
+
+### ✨ Key Features
+- ⚡ **Extreme Performance:** Built with Next.js 15/16 and Turbopack.
+- 🎨 **High-End Design:** Modern interface with Glassmorphism and Dark Mode.
+- ☁️ **Cloud Database:** Real-time integration with Supabase (PostgreSQL).
+- 📱 **Responsive:** Fully optimized for mobile devices.
+- 🔐 **Security:** Protected environment variables and data validation.
+
+### 🛠️ Tech Stack
+- **Framework:** Next.js
+- **Database:** Supabase
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Hosting:** Vercel
+
+---
+
+## 🛠️ Como rodar o projeto / How to run
+
+1. **Clone o repositório / Clone the repo:**
+   ```bash
+   git clone [https://github.com/dinizdaniel284/agencia-lp-system.git](https://github.com/dinizdaniel284/agencia-lp-system.git)
+
+   Instale as dependências / Install deps:
+
+Bash
+npm install
+Configure o .env.local / Setup .env.local:
+
+Snippet de código
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+Inicie o servidor / Start server:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+Desenvolvido por <strong>Agencia IA Diniz</strong> 🚀
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<em>Tecnologia White-label para Vendas de Elite</em>
+</p>
