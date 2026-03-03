@@ -28,7 +28,7 @@ https://agencia-lp-system.vercel.app/
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="80" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" width="80" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80" />
+  <img src="https://skillicons.dev/icons?i=tailwind" height="80"/>
 </p>
 
 <p align="center">
