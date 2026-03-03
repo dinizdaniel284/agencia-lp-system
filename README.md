@@ -1,3 +1,12 @@
+# 🚀 Agencia IA Diniz — AI Lead Capture System
+
+🌎 Language / Idioma
+
+- 🇺🇸 English
+- 🇧🇷 Português (scroll down)
+
+---
+
 ## 🚨 Problem
 Companies lose leads coming from ads and landing pages.  
 When the visitor closes the page before contacting the business, the opportunity disappears.
@@ -10,7 +19,11 @@ More customers, better tracking, and measurable marketing ROI.
 
 ---
 
-# 🚀 Agencia IA Diniz — AI Lead Capture System
+# 🌐 Live Demo
+
+https://agencia-lp-system.vercel.app/
+
+---
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="80" />
@@ -24,26 +37,13 @@ Professional lead capture system designed to prevent lost leads and turn traffic
 
 ---
 
-# 🌐 Live Demo
-
-https://agencia-lp-system.vercel.app/
-
----
-
-# 🌎 Language / Idioma
-
-- 🇺🇸 English
-- 🇧🇷 Português (scroll down)
-
----
-
 # 🇺🇸 ENGLISH
 
 ## 📌 About the Project
 
 This project is the **sales engine behind Agencia IA Diniz**.
 
-It was created to solve a very common problem for companies running online ads.
+It solves a very common problem for companies running online ads.
 
 > Losing potential customers.
 
@@ -79,18 +79,21 @@ Powered by **Supabase (PostgreSQL)**.
 Leads are saved before opening WhatsApp.
 
 ### 📱 Fully Responsive
-Works perfectly on:
+
+Works on:
 
 - Mobile
 - Tablet
 - Desktop
 
 ### 🎨 Modern Interface
+
 - Glassmorphism
 - Dark mode
 - Conversion-focused UI
 
 ### 🔐 Security
+
 - Input validation  
 - Protected environment variables  
 - Secure database communication
@@ -207,21 +210,19 @@ Steps:
 
 # 🤝 White Label
 
-This system can be resold to businesses as:
+This system can be resold as:
 
 - Professional landing pages
 - Lead capture software
 - Marketing automation tool
 
-Ideal for digital agencies.
+Perfect for agencies.
 
 ---
 
 # 💼 Get this system for your business
 
-If you want a custom version for your company or agency, feel free to contact me.
-
-Author:  
+Author  
 Daniel Diniz  
 Agencia IA Diniz
 
@@ -233,26 +234,26 @@ Agencia IA Diniz
 
 Este projeto é o **motor de vendas da Agencia IA Diniz**.
 
-Ele foi criado para resolver um problema comum em empresas que anunciam online:
+Ele resolve um problema comum em empresas que anunciam online.
 
 > Perder leads.
 
-Landing pages tradicionais apenas redirecionam para o WhatsApp.  
-Se o visitante sair da página, o contato é perdido.
+Landing pages comuns apenas redirecionam para o WhatsApp.  
+Se o visitante sair da página, o contato se perde.
 
-Este sistema **salva o lead no banco antes do redirecionamento**, garantindo que nenhuma oportunidade desapareça.
+Este sistema **salva o lead no banco antes do redirecionamento**.
 
 ---
 
 # 💼 Aplicação Comercial
 
-Pode ser utilizado por:
+Pode ser usado por:
 
 - Imobiliárias  
 - Clínicas  
 - Empresas locais  
 - Infoprodutores  
-- Agências de marketing  
+- Agências  
 
 Transformando tráfego pago em **leads organizados automaticamente**.
 
@@ -261,60 +262,30 @@ Transformando tráfego pago em **leads organizados automaticamente**.
 # ✨ Funcionalidades
 
 ### ⚡ Alta Performance
-Construído com **Next.js + Turbopack**.
+Next.js + Turbopack.
 
 ### ☁️ Banco em Tempo Real
-Integração com **Supabase (PostgreSQL)**.
-
-Lead salvo antes de abrir o WhatsApp.
+Supabase (PostgreSQL).
 
 ### 📱 Responsivo
-Funciona em:
-
-- Celulares
-- Tablets
-- Desktop
+Celular, tablet e desktop.
 
 ### 🎨 Interface Moderna
-- Glassmorphism  
-- Dark Mode  
-- UI focada em conversão
+Glassmorphism + Dark Mode.
 
 ### 🔐 Segurança
-- Validação de dados  
-- Variáveis protegidas  
-- Comunicação segura com banco
+Validação de dados e variáveis protegidas.
 
 ---
 
-# 🧠 Fluxo do Sistema
+# 🧠 Fluxo
 
-Usuário entra na página  
+Usuário entra  
 ↓  
-Preenche o formulário  
+Preenche formulário  
 ↓  
-Lead salvo no Supabase  
+Lead salvo  
 ↓  
-Redirecionamento para WhatsApp  
+Abre WhatsApp  
 ↓  
-Empresa recebe o contato
-
----
-
-# 👨‍💻 Autor
-
-Daniel Diniz  
-Agencia IA Diniz
-
-Tecnologia focada em automação e geração de vendas.
-
----
-
-# ⭐ Contribuição
-
-Se quiser contribuir:
-
-1. Fork
-2. Criar uma branch
-3. Commit
-4. Abrir um Pull Request
+Empresa recebe contato
