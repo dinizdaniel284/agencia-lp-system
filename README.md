@@ -2,24 +2,24 @@
 
 🌎 Language / Idioma
 
-- 🇺🇸 English
-- 🇧🇷 Português (scroll down)
+- 🇺🇸 English → [Go to English](#english)
+- 🇧🇷 Português → [Ir para Português](#portugues)
 
 ---
 
 ## 🚨 Problem
-Companies lose leads coming from ads and landing pages.  
+Companies often lose leads generated from ads and landing pages.  
 When the visitor closes the page before contacting the business, the opportunity disappears.
 
 ## 💡 Solution
-Capture and store the lead before redirecting the visitor to WhatsApp.
+Automatically capture and store the lead before redirecting the visitor to WhatsApp.
 
 ## 📈 Result
-More customers, better tracking, and measurable marketing ROI.
+More customers, reliable lead tracking, and measurable marketing ROI.
 
 ---
 
-# 🌐 Live Demo
+## 🌐 Live Demo
 
 https://agencia-lp-system.vercel.app/
 
@@ -37,7 +37,7 @@ Professional lead capture system designed to prevent lost leads and turn traffic
 
 ---
 
-# 🇺🇸 ENGLISH
+# English
 
 ## 📌 About the Project
 
@@ -54,7 +54,7 @@ This system **stores the lead before the redirect**, ensuring every opportunity 
 
 ---
 
-# 💼 Business Applications
+## 💼 Business Applications
 
 This system can be used by:
 
@@ -68,7 +68,7 @@ Turning paid traffic into **organized leads automatically**.
 
 ---
 
-# ✨ Features
+## ✨ Features
 
 ### ⚡ High Performance
 Built with **Next.js + Turbopack** for extremely fast loading.
@@ -88,8 +88,8 @@ Works on:
 
 ### 🎨 Modern Interface
 
-- Glassmorphism
-- Dark mode
+- Glassmorphism  
+- Dark mode  
 - Conversion-focused UI
 
 ### 🔐 Security
@@ -100,7 +100,7 @@ Works on:
 
 ---
 
-# 🧠 System Flow
+## 🧠 System Flow
 
 Visitor enters the page  
 ↓  
@@ -114,19 +114,19 @@ Business receives the contact
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
-Next.js | Frontend / Backend
-Supabase | Database
-Tailwind CSS | Styling
-Lucide Icons | Icons
+Next.js | Frontend / Backend  
+Supabase | Database  
+Tailwind CSS | Styling  
+Lucide Icons | Icons  
 Vercel | Deployment
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
 Clone the repository
 
@@ -148,7 +148,7 @@ npm install
 
 ---
 
-# 🔐 Environment Setup
+## 🔐 Environment Setup
 
 Create a file:
 
@@ -169,7 +169,7 @@ https://supabase.com
 
 ---
 
-# ▶️ Run the Project
+## ▶️ Run the Project
 
 ```bash
 npm run dev
@@ -183,7 +183,7 @@ http://localhost:3000
 
 ---
 
-# 🌐 Deployment
+## 🌐 Deployment
 
 Recommended platform:
 
@@ -198,7 +198,7 @@ Steps:
 
 ---
 
-# 📈 Future Improvements
+## 📈 Future Improvements
 
 - CRM integration  
 - AI automation  
@@ -208,27 +208,19 @@ Steps:
 
 ---
 
-# 🤝 White Label
+## 🤝 White Label
 
 This system can be resold as:
 
-- Professional landing pages
-- Lead capture software
-- Marketing automation tool
+- Professional landing pages  
+- Lead capture software  
+- Marketing automation tool  
 
 Perfect for agencies.
 
 ---
 
-# 💼 Get this system for your business
-
-Author  
-Daniel Diniz  
-Agencia IA Diniz
-
----
-
-# 🇧🇷 PORTUGUÊS
+# Portugues
 
 ## 📌 Sobre o Projeto
 
@@ -245,7 +237,7 @@ Este sistema **salva o lead no banco antes do redirecionamento**.
 
 ---
 
-# 💼 Aplicação Comercial
+## 💼 Aplicação Comercial
 
 Pode ser usado por:
 
@@ -259,7 +251,7 @@ Transformando tráfego pago em **leads organizados automaticamente**.
 
 ---
 
-# ✨ Funcionalidades
+## ✨ Funcionalidades
 
 ### ⚡ Alta Performance
 Next.js + Turbopack.
@@ -278,7 +270,7 @@ Validação de dados e variáveis protegidas.
 
 ---
 
-# 🧠 Fluxo
+## 🧠 Fluxo
 
 Usuário entra  
 ↓  
