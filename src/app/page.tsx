@@ -2,13 +2,36 @@
 
 import { useState } from 'react'
 import { supabase } from '@/lib/supabase'
-import { CheckCircle, Zap, Database, Cpu, MousePointer2 } from 'lucide-react'
+import {
+  CheckCircle,
+  Zap,
+  Database,
+  Cpu,
+  MousePointer2,
+  MessageCircle
+} from 'lucide-react'
 
 export default function LandingPage() {
 
   const [loading, setLoading] = useState(false)
   const [enviado, setEnviado] = useState(false)
   const [modoDemo, setModoDemo] = useState(false)
+  const [nomeLead, setNomeLead] = useState("")
+
+  function abrirWhatsappDemo(nome: string) {
+
+    const mensagem = encodeURIComponent(
+      `Olá ${nome}, obrigado pelo contato!\n\n` +
+      `Esta é uma demonstração do sistema automático da Agência IA Diniz.\n\n` +
+      `Em produção este lead seria enviado automaticamente para o WhatsApp da empresa.`
+    )
+
+    const numeroFake = "5511999999999"
+
+    const url = `https://wa.me/${numeroFake}?text=${mensagem}`
+
+    window.open(url, "_blank")
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 
@@ -24,17 +47,17 @@ export default function LandingPage() {
       pagina_id: "MVP_WORKANA_V1"
     }
 
+    setNomeLead(data.nome)
+
     try {
 
       const { error } = await supabase
         .from('leads')
         .insert([data])
 
-      if (error) {
-        throw error
-      }
+      if (error) throw error
 
-      console.log("✅ Lead salvo no Supabase:", data)
+      console.log("Lead salvo no Supabase:", data)
 
       setModoDemo(false)
       setEnviado(true)
@@ -43,20 +66,20 @@ export default function LandingPage() {
 
         alert(
           `🚀 AGENCIA IA DINIZ\n\n` +
-          `Lead registrado com sucesso no banco Supabase!\n\n` +
+          `Lead registrado no banco Supabase!\n\n` +
           `Nome: ${data.nome}\n` +
           `WhatsApp: ${data.whatsapp}\n\n` +
-          `Próxima etapa (produção):\n` +
-          `• Envio automático para CRM\n` +
-          `• Disparo WhatsApp\n` +
-          `• Pipeline de vendas`
+          `Fluxo real:\n` +
+          `• salvar no banco\n` +
+          `• enviar para CRM\n` +
+          `• notificar WhatsApp`
         )
 
       }, 400)
 
     } catch (error) {
 
-      console.warn("⚠️ Supabase offline — modo demonstração")
+      console.warn("Supabase offline - modo demo")
 
       setModoDemo(true)
       setEnviado(true)
@@ -65,11 +88,10 @@ export default function LandingPage() {
 
         alert(
           `🚀 DEMONSTRAÇÃO ATIVA\n\n` +
-          `Lead capturado localmente com sucesso!\n\n` +
+          `Lead capturado localmente!\n\n` +
           `Nome: ${data.nome}\n` +
           `WhatsApp: ${data.whatsapp}\n\n` +
-          `Obs: banco Supabase desativado neste ambiente demo.\n` +
-          `Em produção os dados seriam salvos automaticamente.`
+          `Banco Supabase desativado neste ambiente demo.`
         )
 
       }, 400)
@@ -77,37 +99,32 @@ export default function LandingPage() {
     }
 
     setLoading(false)
+
   }
 
   return (
 
-    <main className="min-h-screen bg-[#0f172a] text-slate-100 font-sans">
+    <main className="min-h-screen bg-[#0f172a] text-slate-100">
 
-      {/* Navbar */}
-
-      <nav className="p-6 flex justify-between items-center max-w-7xl mx-auto">
+      <nav className="p-6 flex justify-between max-w-7xl mx-auto">
 
         <div className="flex items-center gap-2 font-bold text-2xl">
 
-          <div className="bg-blue-600 p-1.5 rounded-lg text-white">
+          <div className="bg-blue-600 p-2 rounded-lg">
             <Zap size={20}/>
           </div>
 
-          <span>AGENCIA IA <span className="text-blue-500">DINIZ</span></span>
+          AGENCIA IA <span className="text-blue-500">DINIZ</span>
 
         </div>
 
         <span className="text-xs text-blue-400 border border-blue-500/20 px-3 py-1 rounded-full">
-          SaaS Lead Engine v1.2
+          Lead Engine v1.2
         </span>
 
       </nav>
 
-      {/* Conteúdo */}
-
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 py-16 items-center">
-
-        {/* Texto */}
 
         <div className="space-y-6">
 
@@ -116,8 +133,8 @@ export default function LandingPage() {
           </h1>
 
           <p className="text-slate-400">
-            Sistema de captura de leads da <strong>Agência IA Diniz</strong>.
-            Demonstração real de persistência de dados e integração cloud.
+            Sistema de captura de leads desenvolvido pela
+            <strong> Agência IA Diniz</strong>.
           </p>
 
           <div className="grid grid-cols-2 gap-4">
@@ -136,8 +153,6 @@ export default function LandingPage() {
 
         </div>
 
-        {/* Form */}
-
         <div className="bg-slate-900 p-8 rounded-3xl border border-white/10">
 
           {!enviado ? (
@@ -152,7 +167,7 @@ export default function LandingPage() {
                 <input
                   name="nome"
                   required
-                  placeholder="Seu Nome"
+                  placeholder="Seu nome"
                   className="w-full bg-slate-800 border border-slate-700 p-4 rounded-xl"
                 />
 
@@ -165,7 +180,7 @@ export default function LandingPage() {
 
                 <button
                   disabled={loading}
-                  className="w-full bg-blue-600 hover:bg-blue-500 font-bold py-4 rounded-xl flex items-center justify-center gap-2"
+                  className="w-full bg-blue-600 hover:bg-blue-500 py-4 rounded-xl font-bold flex items-center justify-center gap-2"
                 >
 
                   {loading ? "Processando..." :
@@ -179,6 +194,7 @@ export default function LandingPage() {
                 </button>
 
               </form>
+
             </>
 
           ) : (
@@ -191,26 +207,34 @@ export default function LandingPage() {
                 Lead Capturado
               </h2>
 
-              {modoDemo ? (
+              {modoDemo ?
 
                 <p className="text-yellow-400 text-sm">
-                  Modo demonstração ativo (Supabase offline)
+                  Modo demonstração ativo
                 </p>
 
-              ) : (
+                :
 
                 <p className="text-green-400 text-sm">
-                  Lead sincronizado com Supabase Cloud
+                  Lead sincronizado com Supabase
                 </p>
 
-              )}
+              }
+
+              <button
+                onClick={() => abrirWhatsappDemo(nomeLead)}
+                className="w-full bg-green-600 hover:bg-green-500 py-3 rounded-xl font-bold flex items-center justify-center gap-2"
+              >
+                Simular envio WhatsApp
+                <MessageCircle size={18}/>
+              </button>
 
               <button
                 onClick={() => {
                   setEnviado(false)
                   setModoDemo(false)
                 }}
-                className="mt-4 px-6 py-2 border border-slate-700 rounded-full text-xs"
+                className="text-xs border border-slate-700 px-6 py-2 rounded-full"
               >
                 Novo Teste
               </button>
@@ -223,11 +247,9 @@ export default function LandingPage() {
 
       </div>
 
-      {/* Footer */}
-
       <footer className="text-center text-xs opacity-40 py-10 border-t border-white/10">
 
-        SUPABASE_DB: leads (nome, whatsapp, servico) | STACK: NEXT.js 15
+        SUPABASE_DB: leads (nome, whatsapp, servico)
 
         <br/>
 
@@ -238,4 +260,4 @@ export default function LandingPage() {
     </main>
 
   )
-          }
+      }
