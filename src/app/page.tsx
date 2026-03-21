@@ -190,4 +190,4 @@ function BenefitCard({ icon, title, description, image }: { icon: React.ReactNod
       </div>
     </div>
   )
-      }
+}
