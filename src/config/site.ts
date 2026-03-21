@@ -7,8 +7,8 @@ export const siteConfig = {
     { title: "Benefícios", href: "#beneficios" },
   ],
   links: {
-    // Usando um número fictício para demonstração e evitar bloqueio na Workana
-    whatsapp: "https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20demonstrativo.",
+    // Mantemos vazio para o sistema saber que é apenas demonstração
+    whatsapp: "#",
   },
   copy: {
     headline: "Pare de perder clientes e receba contatos no WhatsApp todos os dias",
